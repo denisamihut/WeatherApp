@@ -2,4 +2,9 @@
   display: inline-block;
 }
 
-
+.card-header {
+  background-color: dodgerblue;
+}
+.card-body {
+  background-color:white  ;
+}

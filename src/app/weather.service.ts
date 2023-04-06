@@ -10,6 +10,6 @@ export class WeatherService {
   }
 
   getWeather(city: string) {
-    return this.http.get('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=5aecdebfad2b5e742ec7ed4f5ccb40e0&units=metric')
+    return this.http.get('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=5aecdebfad2b5e742ec7ed4f5ccb40e0&units=metric')
   }
 }

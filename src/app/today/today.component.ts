@@ -26,12 +26,12 @@ export class TodayComponent implements OnInit {
         console.log(res)
         this.myWeather = res;
         console.log(this.myWeather)
-        this.iconURL = 'https://openweathermap.org/img/wn/' + this.myWeather.weather[0].icon + '@2x.png';
-        this.summary = this.myWeather.weather[0].main;
-        this.temperature = this.myWeather.main.temp;
-        this.feelsLikeTemp = this.myWeather.main.feels_like;
-        this.humidity = this.myWeather.main.humidity;
-        this.pressure = this.myWeather.main.pressure;
+        this.iconURL = 'https://openweathermap.org/img/wn/' + this.myWeather.list[0].weather[0].icon + '@2x.png';
+        this.summary = this.myWeather.list[0].weather[0].main;
+        this.temperature = this.myWeather.list[0].main.temp;
+        this.feelsLikeTemp = this.myWeather.list[0].main.feels_like;
+        this.humidity = this.myWeather.list[0].main.humidity;
+        this.pressure = this.myWeather.list[0].main.pressure;
       },
 
       error: (error) => console.log(error.message),

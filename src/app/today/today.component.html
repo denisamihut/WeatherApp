@@ -1,24 +1,29 @@
-<div class="today_container py-5">
-  <div class="card border-0 text-white bg-primary bg-gradient m-5" style="max-width: 18rem;">
-    <div class="card-header text-center">
-      <h2>{{city}}</h2>
-      <p><img src="{{ iconURL}}" alt="weather icon"></p>
-      <p class="card-text">Summary: {{ summary }}</p>
-
-    </div>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-6">
-          <p class="card-text">Temperature: {{ temperature }} °C</p>
-          <p class="card-text">Feels like: {{ feelsLikeTemp }} °C</p>
-
+<div class="today_container p-5">
+  <div class="row">
+    <div class="col-6">
+      <div class="card border-opacity-25 text-light">
+        <div class="card-header">
+          <h2>{{ city }}</h2>
+          <p class="card-text">{{ date_text }}</p>
+          <p><img src="{{ iconURL}}" alt="weather icon"></p>
+          <p class="card-text">Summary: {{ summary }}</p>
         </div>
-        <div class="col-6">
-          <p class="card-text">Pressure: {{ pressure }} hPa</p>
-          <p class="card-text">Humidity: {{ humidity }}%</p>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <p class="card-text">Temperature: {{ temperature }} °C</p>
+              <p class="card-text">Feels like: {{ feelsLikeTemp }} °C</p>
+            </div>
+            <div class="col-6">
+              <p class="card-text">Pressure: {{ pressure }} hPa</p>
+              <p class="card-text">Humidity: {{ humidity }}%</p>
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
+
   </div>
+
 </div>

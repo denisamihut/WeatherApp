@@ -6,10 +6,12 @@ import {WeatherService} from "../weather.service";
   templateUrl: './forecast.component.html',
   styleUrls: ['./forecast.component.css']
 })
+
 export class ForecastComponent implements OnInit {
   myWeather: any;
   city: string = 'London';
   iconURL: string = '';
+  date_text: string = '';
   summary: string = '';
   temperature: number = 0;
   feelsLikeTemp: number = 0;
@@ -28,11 +30,14 @@ export class ForecastComponent implements OnInit {
         this.myWeather = res;
         console.log(this.myWeather)
         this.iconURL = 'https://openweathermap.org/img/wn/' + this.myWeather.list[0].weather[0].icon + '@2x.png';
+
         this.summary = this.myWeather.list[0].weather[0].main;
         this.temperature = this.myWeather.list[0].main.temp;
         this.feelsLikeTemp = this.myWeather.list[0].main.feels_like;
         this.humidity = this.myWeather.list[0].main.humidity;
         this.pressure = this.myWeather.list[0].main.pressure;
+        this.date_text = this.myWeather.list[0].dt_txt;
+
       },
 
       error: (error) => console.log(error.message),

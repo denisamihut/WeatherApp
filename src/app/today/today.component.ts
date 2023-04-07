@@ -15,6 +15,8 @@ export class TodayComponent implements OnInit {
   feelsLikeTemp: number = 0;
   humidity: number = 0;
   pressure: number = 0;
+  date_text: string = '';
+
 
   constructor(private weatherService: WeatherService) {
   }
@@ -32,6 +34,8 @@ export class TodayComponent implements OnInit {
         this.feelsLikeTemp = this.myWeather.list[0].main.feels_like;
         this.humidity = this.myWeather.list[0].main.humidity;
         this.pressure = this.myWeather.list[0].main.pressure;
+        this.date_text = this.myWeather.list[0].dt_txt;
+
       },
 
       error: (error) => console.log(error.message),

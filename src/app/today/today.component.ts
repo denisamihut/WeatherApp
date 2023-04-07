@@ -9,13 +9,14 @@ import {WeatherService} from "../weather.service";
 export class TodayComponent implements OnInit {
   myWeather: any;
   city: string = 'London';
+  country: string = 'GB';
+  date_text: string = '';
   iconURL: string = '';
   summary: string = '';
   temperature: number = 0;
   feelsLikeTemp: number = 0;
   humidity: number = 0;
   pressure: number = 0;
-  date_text: string = '';
 
 
   constructor(private weatherService: WeatherService) {
@@ -27,15 +28,14 @@ export class TodayComponent implements OnInit {
       next: (res) => {
         console.log(res)
         this.myWeather = res;
-        console.log(this.myWeather)
+        this.country = this.myWeather.city.country;
+        this.date_text = this.myWeather.list[0].dt_txt;
         this.iconURL = 'https://openweathermap.org/img/wn/' + this.myWeather.list[0].weather[0].icon + '@2x.png';
         this.summary = this.myWeather.list[0].weather[0].main;
         this.temperature = this.myWeather.list[0].main.temp;
         this.feelsLikeTemp = this.myWeather.list[0].main.feels_like;
-        this.humidity = this.myWeather.list[0].main.humidity;
         this.pressure = this.myWeather.list[0].main.pressure;
-        this.date_text = this.myWeather.list[0].dt_txt;
-
+        this.humidity = this.myWeather.list[0].main.humidity;
       },
 
       error: (error) => console.log(error.message),

@@ -4,12 +4,14 @@ import {HttpClientModule} from '@angular/common/http'
 import {AppComponent} from './app.component';
 import {TodayComponent} from './today/today.component';
 import { ForecastComponent } from './forecast/forecast.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodayComponent,
-    ForecastComponent
+    ForecastComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

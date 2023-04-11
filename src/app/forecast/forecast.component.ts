@@ -11,7 +11,6 @@ export class ForecastComponent implements OnInit {
   myWeather: any;
   city: string = 'London';
   country: string = 'GB';
-
   iconURL: string = '';
   date_text: string = '';
   summary: string = '';

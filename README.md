@@ -27,33 +27,30 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # WeatherApp
 
-Weather Application
+## Author: Mihut Denisa-Georgiana
 
-Author: Mihut Denisa-Georgiana
+## Project info:
+###	Type: Angular CLI: 15.2.4
+###	Node: 18.12.1
+### Package Manager: npm 9.6.0
+###	OS: win32 x64
+###	Server: Angular CLI on localhost:4200
+##	Project structure & commands
+### ng serve – to start the server
+###  ng generate component today – getting weather data for one day
+###  npm install bootstrap 
+### ng generate service weather – fetching data from API
+###  ng generate component future - getting weather forecast
+### ng generate component search – search functionality - not successfull
 
-Project info:
-•	Type: Angular CLI: 15.2.4
-•	Node: 18.12.1
-•	Package Manager: npm 9.6.0
-•	OS: win32 x64
-•	Server: Angular CLI on localhost:4200
-•	Project structure & commands
-  ng serve – to start the server
-  ng generate component today – getting weather data for one day
-  npm install bootstrap 
-  ng generate service weather – fetching data from API
-  ng generate component future - getting weather forecast
-  ng generate component search – search functionality
-
-Currently app design
+## Currently app design
  ![image](https://user-images.githubusercontent.com/73034929/231351994-6cb2d03d-2fc8-4351-bbaf-33d3df597dcd.png)
 
-Project functionality
-•	Aplicație funcționala pe server si ruleaza pe localhost http://localhost:4200/
-•	Codul încărcat si accesibil pe GitHub: https://github.com/denisamihut/WeatherApp
-•	Aplicația este legata la Weather API: https://openweathermap.org/
-Optional features 
-•	Am reusit sa fac legatura cu datele din API ca sa afiseze vremea pentru un singur oras
+## Project functionality
+###	Aplicație funcționala pe server si ruleaza pe localhost http://localhost:4200/
+###	Aplicația este legata la Weather API: https://openweathermap.org/
+## Optional features 
+###	Am reusit sa fac legatura cu datele din API ca sa afiseze vremea pentru un singur oras
 
 
 

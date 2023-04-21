@@ -40,13 +40,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 | Server  | Angular CLI - localhost:4200  |
 
 ##	Project structure & commands
-### ng serve – to start the server
-###  ng generate component today – getting weather data for one day
-###  npm install bootstrap 
-### ng generate service weather – fetching data from API
-###  ng generate component future - getting weather forecast
-### ng generate component search – search functionality - not successfull
 
+```
+ ng serve – to start the server
+ ng generate component today – getting weather data for one day
+ npm install bootstrap 
+ ng generate service weather – fetching data from API
+ ng generate component future - getting weather forecast
+ ng generate component search – search functionality - not successfull
+```
 ## Currently app design
  ![image](https://user-images.githubusercontent.com/73034929/231351994-6cb2d03d-2fc8-4351-bbaf-33d3df597dcd.png)
 

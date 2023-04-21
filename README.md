@@ -25,16 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# WeatherApp
+
+# WeatherApplication
 
 ## Author: Mihut Denisa-Georgiana
 
 ## Project info:
-###	Type: Angular CLI: 15.2.4
-###	Node: 18.12.1
-### Package Manager: npm 9.6.0
-###	OS: win32 x64
-###	Server: Angular CLI on localhost:4200
+
+| Resource Name  | Version |
+| ------------- | ------------- |
+| Angular CLI | 15.2.4 |
+| Node  | 18.12.1  |
+| Package Manager  | npm 9.6.0 |
+| Server  | Angular CLI - localhost:4200  |
+
 ##	Project structure & commands
 ### ng serve – to start the server
 ###  ng generate component today – getting weather data for one day

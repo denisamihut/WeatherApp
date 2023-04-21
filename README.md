@@ -30,7 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Author: Mihut Denisa-Georgiana
 
-## Project info:
+## Project info
 
 | Resource Name  | Version |
 | ------------- | ------------- |
@@ -39,7 +39,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 | Package Manager  | npm 9.6.0 |
 | Server  | Angular CLI - localhost:4200  |
 
-##	Project structure & commands
+##	Project commands
 
 ```
  ng serve – to start the server
@@ -48,13 +48,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  ng generate service weather – fetching data from API
  ng generate component future - getting weather forecast
  ng generate component search – search functionality - not successfull
+ 
 ```
-## Currently app design
+## Current app design
  ![image](https://user-images.githubusercontent.com/73034929/231351994-6cb2d03d-2fc8-4351-bbaf-33d3df597dcd.png)
 
 ## Project functionality
 ###	Aplicație funcționala pe server si ruleaza pe localhost http://localhost:4200/
 ###	Aplicația este legata la Weather API: https://openweathermap.org/
+
 ## Optional features 
 ###	Am reusit sa fac legatura cu datele din API ca sa afiseze vremea pentru un singur oras
 
